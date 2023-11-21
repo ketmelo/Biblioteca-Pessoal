@@ -6,16 +6,23 @@ body, h1, h2, h3, ul, li, a {
     text-decoration: none;
 }
 
+/*body*/
+body{
+    background-color: #F2E3D5;
+}
+
+
 /* Estilização do header */
 header {
-    background-color: #333;
+    background-color: #026773;
     color: white;
     padding: 1rem 0;
-    text-align: center;
+    
 }
 
 header h1 {
     margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 /* Estilização do menu */
@@ -28,6 +35,7 @@ nav ul {
 
 nav li {
     display: inline;
+
 }
 
 nav a {
@@ -128,3 +136,22 @@ main {
 .icon-btn.delete:hover {
     color: #b02130; /* Cor vermelha ao passar o mouse */
 }
+
+/* 2023 minha biblioteca*/
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0.5rem;
+}
+
+/* botao adicionar*/
+.fas , .fa-plus{
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+
+}
+
+thead th{
+    margin-left: 0.5rem;
+}
+

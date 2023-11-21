@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livros - Biblioteca Pessoal</title>
+    <title>Editora - Biblioteca Pessoal</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
 
@@ -17,26 +17,25 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/livros.html">Livros</a></li>
                 <li><a href="./autores.html">Autores</a></li>
-                <li><a href="./editora.html">Autores</a></li>
-
+                <li><a href="./editora.html">Editora</a></li>
 
             </ul>
         </nav>
-        <h1>Livros</h1>
+        <h1>Editora</h1>
     </header>
 
     <main>
-<h2>Lista de Livros</h2>
+<h2>Lista de Editoras</h2>
 <button class="icon-btn" id="addBookBtn">
     <i class="fas fa-plus"></i> Adicionar
 </button>
     <table>
         <thead>
             <tr>
-                <th>Título</th>
-                <th>Autor</th>
-                <th>Data de Publicação</th>
-                <th>Ações</th>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>Telefone</th>
             </tr>
         </thead>
         <tbody id="listaLivros"></tbody>
@@ -46,11 +45,12 @@
     <!-- Popup para Adicionar/Atualizar Livro -->
     <div id="bookPopup" class="hidden">
         <form id="bookForm">
-            <h3>Adicionar/Atualizar Livro</h3>
+            <h3>Adicionar/Atualizar Editora</h3>
             <input type="hidden" id="id_livro">
-            <input type="text" id="titulo" placeholder="Título" required>
-            <input type="text" id="autor" placeholder="Autor" required>
-            <input type="date" id="dataPublicacao" placeholder="Data de Publicação" required>
+            <input type="text" id="titulo" placeholder="ID Editora" required>
+            <input type="text" id="autor" placeholder="Nome" required>
+            <input type="text" id="dataPublicacao" placeholder="Endereço" required>
+            <input type="tel" id=" telefone" placeholder="Telefone">
             <button type="submit">Salvar</button>
             <button type="button" id="closePopupBtn">Fechar</button>
         </form>
