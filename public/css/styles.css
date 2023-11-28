@@ -72,7 +72,9 @@ main {
     align-items: center;
 }
 
-#bookPopup form {
+#bookPopup form,
+#autorPopup form,
+#editoraPopup form {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
@@ -81,13 +83,21 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#bookPopup h3 {
+#bookPopup h3,
+#autorPopup h3,
+#editoraPopup h3 {
     margin-bottom: 1rem;
 }
 
 #bookPopup input[type="text"],
 #bookPopup input[type="date"],
-#bookPopup button {
+#bookPopup button,
+#autorPopup input[type="text"],
+#autorPopup input[type="date"],
+#autorPopup button,
+#editoraPopup input[type="text"],
+#editoraPopup input[type="date"],
+#editoraPopup button  {
     width: 100%;
     margin-bottom: 1rem;
     padding: 0.5rem;
@@ -95,23 +105,32 @@ main {
     border-radius: 5px;
 }
 
-#bookPopup button[type="submit"] {
+#bookPopup button,
+#autorPopup button,
+#editoraPopup button
+{
     background: #007BFF;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-#bookPopup button[type="submit"]:hover {
+#bookPopup button[type="submit"]:hover,
+#autorPopup button[type="submit"]:hover,
+#editoraPopup button[type="submit"]:hover {
     background: #0056b3;
 }
 
-#bookPopup #closePopupBtn {
+#bookPopup #closePopupBtn,
+#autorPopup #closePopupBtn,
+#editoraPopup #closePopupBtn {
     background: #ccc;
     cursor: pointer;
 }
 
-#bookPopup #closePopupBtn:hover {
+#bookPopup #closePopupBtn:hover,
+#autorPopup #closePopupBtn:hover,
+#editoraPopup #closePopupBtn:hover {
     background: #aaa;
 }
 

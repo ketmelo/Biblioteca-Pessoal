@@ -27,7 +27,7 @@
 
     <main>
 <h2>Lista de Autores</h2>
-<button class="icon-btn" id="addBookBtn">
+<button class="icon-btn" id="addautorBtn">
     <i class="fas fa-plus"></i> Adicionar
 </button>
     <table>
@@ -38,18 +38,18 @@
                 <th>Data de Nascimento</th>
             </tr>
         </thead>
-        <tbody id="listaLivros"></tbody>
+        <tbody id="listaAutores"></tbody>
     </table>
     </main>
 
     <!-- Popup para Adicionar/Atualizar Livro -->
-    <div id="bookPopup" class="hidden">
-        <form id="bookForm">
+    <div id="autorPopup" class="hidden">
+        <form id="autorForm">
             <h3>Adicionar/Atualizar Autor</h3>
-            <input type="hidden" id="id_livro">
-            <input type="text" id="titulo" placeholder="ID Autor" required>
-            <input type="text" id="autor" placeholder="Nome" required>
-            <input type="date" id="dataPublicacao" placeholder="Data de Nascimento" required>
+            <input type="hidden" id="id_autor">
+            <input type="text" id="autor" placeholder="ID Autor" required>
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="date" id="dataNascimento" placeholder="Data de Nascimento" required>
             
             <button type="submit">Salvar</button>
             <button type="button" id="closePopupBtn">Fechar</button>
